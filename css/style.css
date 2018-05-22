@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "section1"
+        "section2"
+        "section3"
+        "section4"
+        "section5"
+        "section6";
+}
+
+.section1{
+    grid-area: section1;
+    height: 20em;
+    background-color: red;
+}
+.section2{
+    grid-area: section2;
+    height: 20em;
+    background-color: purple;
+}
+.section3{
+    grid-area: section3;
+    height: 20em;
+    background-color: red;
+}
+.section4{
+    grid-area: section4;
+    height: 20em;
+    background-color: purple;
+}
+.section5{
+    grid-area: section5;
+    height: 20em;
+    background-color: red;
+}
+.section6{
+    grid-area: section6;
+    height: 20em;
+    background-color: purple;
+}
