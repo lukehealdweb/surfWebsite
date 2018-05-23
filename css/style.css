@@ -3,21 +3,22 @@ body{
 }
 .grid{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
-        "section1"
-        "section2"
-        "section3"
-        "section4"
-        "section5"
-        "section6";
+        "section1 section1"
+        "section2 section3"
+        "section4 section4"
+        "section5 section5"
+        "section6 section6";
 }
 
 .section1{
     grid-area: section1;
-    height: 20em;
-    background-color: red;
+    height: 100vh;
+    background-image: url(/assets/images/footprints.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .section2{
     grid-area: section2;
@@ -27,20 +28,20 @@ body{
 .section3{
     grid-area: section3;
     height: 20em;
-    background-color: red;
+    background-color: green;
 }
 .section4{
     grid-area: section4;
     height: 20em;
-    background-color: purple;
+    background-color: orange;
 }
 .section5{
     grid-area: section5;
     height: 20em;
-    background-color: red;
+    background-color: indianred;
 }
 .section6{
     grid-area: section6;
     height: 20em;
-    background-color: purple;
+    background-color: grey;
 }
